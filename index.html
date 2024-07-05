@@ -4,21 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Relógio</title>
+    <title>Relógio e Timer</title>
 </head>
 <body>
-    <div class="box-clock">
-        <div id="clock">
-            <span id="hours">10</span>
-            <span>:</span>
-            <span id="minutes">10</span>
-            <span>:</span>
-            <span id="seconds">10</span>
-        </div>    
+    <div class="buttons">
+        <button id="time-button">RELÓGIO</button>
+        <button id="timer-button">TIMER</button>
     </div>
-    <footer>
-        <span>&#169; Mauricio, Todos os direitos reservados</span>
-    </footer>
+    <div id="container-clock">
+        <div class="title">
+            <p>Relógio Digital</p>
+        </div>
+        <div class="time">
+            <p id="time"></p>
+        </div>
+        <div class="date">
+            <p id="date"></p>
+        </div>
+    </div>
+    <div id="container-timer">
+        <div class="title">
+            <p>Timer</p>
+        </div>
+        <div class="timer">
+            <p id="timer">00 : 00 : 00</p>
+        </div>
+        <div class="buttons-timer">
+            <button id="start-timer">Começar</button>
+            <button id="stop-timer">Parar</button>
+            <button id="zerar-timer">Zerar</button>
+        </div>
     <script src="script.js"></script>
 </body>
 </html>
